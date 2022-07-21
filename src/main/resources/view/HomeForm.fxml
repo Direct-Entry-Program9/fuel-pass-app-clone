@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="508.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeFormController">
+   <children>
+      <AnchorPane fx:id="pneHomeForm" layoutX="106.0" layoutY="110.0" prefHeight="251.0" prefWidth="508.0" style="-fx-background-color: F0F0F0;" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="90.0" />
+      <FlowPane alignment="CENTER" layoutX="130.0" layoutY="403.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <ImageView fitHeight="30.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/direct-entry-program.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="133.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/partner2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/partner1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </FlowPane>
+      <ImageView fx:id="imgLogo" fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#imgLogoOnMouseClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/main.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <AnchorPane id="pneContainer" fx:id="imgContainer" focusTraversable="true" layoutX="455.0" layoutY="14.0" onKeyReleased="#pneLoginOnKeyReleased" onMouseClicked="#pneLoginOnMouseClicked" stylesheets="@../css/homeForm.css" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+         <children>
+            <ImageView fitHeight="53.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/login.png" />
+               </image>
+            </ImageView>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </AnchorPane>
+   </children>
+</AnchorPane>
