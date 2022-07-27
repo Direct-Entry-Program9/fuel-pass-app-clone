@@ -10,6 +10,8 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
+import util.Navigation;
+import util.Routes;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -57,7 +59,8 @@ public class AdminLoginFormController {
             return;
         }
 
-        URL resource = this.getClass().getResource("/view/ControlCenterForm.fxml");
+        Navigation.navigate(Routes.CONTROL_CENTER);
+        /*URL resource = this.getClass().getResource("/view/ControlCenterForm.fxml");
         AnchorPane controlCenter = FXMLLoader.load(resource);
 
         AnchorPane pneController = (AnchorPane) pneAdminLoginForm.getParent();
@@ -67,6 +70,6 @@ public class AdminLoginFormController {
         AnchorPane.setRightAnchor(controlCenter,0.0);
         AnchorPane.setLeftAnchor(controlCenter,0.0);
         AnchorPane.setTopAnchor(controlCenter,0.0);
-        AnchorPane.setBottomAnchor(controlCenter,0.0);
+        AnchorPane.setBottomAnchor(controlCenter,0.0);*/
     }
 }

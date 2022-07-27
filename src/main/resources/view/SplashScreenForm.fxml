@@ -38,9 +38,9 @@
                   </ImageView>
                </children>
             </HBox>
-            <Label layoutX="136.0" layoutY="81.0" text="NATIONAL FUEL PASS">
+            <Label layoutX="126.0" layoutY="89.0" text="NATIONAL FUEL PASS">
                <font>
-                  <Font name="DejaVu Serif Bold" size="26.0" />
+                  <Font name="DejaVu Serif Bold" size="27.0" />
                </font></Label>
             <ImageView fitHeight="53.0" fitWidth="179.0" layoutX="292.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                <image>

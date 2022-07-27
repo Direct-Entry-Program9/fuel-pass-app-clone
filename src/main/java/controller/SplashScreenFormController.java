@@ -11,6 +11,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
 import javafx.util.Duration;
+import util.Navigation;
 
 import java.io.IOException;
 
@@ -56,12 +57,15 @@ public class SplashScreenFormController {
             public void handle(ActionEvent actionEvent) {
                 try {
                     AnchorPane homeContainer = FXMLLoader.load(this.getClass().getResource("/view/HomeForm.fxml"));
+                    AnchorPane pneContainer = (AnchorPane) homeContainer.lookup("#pneHomeForm");
+                    Navigation.init(pneContainer);
                     Scene scene = new Scene(homeContainer);
                     Stage stage = new Stage();
                     stage.setScene(scene);
                     stage.show();
                     stage.centerOnScreen();
                     stage.setTitle("National Fuel Pass");
+                    stage.setMaximized(true);
                     txtLoading.getScene().getWindow().hide();
                 } catch (IOException e) {
                     throw new RuntimeException(e);
